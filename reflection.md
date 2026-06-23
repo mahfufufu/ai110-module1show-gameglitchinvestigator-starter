@@ -64,5 +64,3 @@ Document at least 3 bugs you found. Add rows as needed.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
   As expected, AI code goes for optimal and intentionally design choices at the expense of readability or reusability unless we spend a long time going back and forth with it to cater it to a different outcome.
-
-
