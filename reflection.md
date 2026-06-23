@@ -14,9 +14,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input                       | Expected Behavior             | Actual Behavior | Console Output / Error |
 |---------------------------  |-------------------------------|-----------------|------------------------|
-| 100.                        |   Go lower!                   |    Go higher!   |                        |
-| 140.                        |   Go lower!                   |.   Go lower!    |                        |
-|new game -> submit guess     |tells me to go high or low     | no response!!!                           |
+| 100.                        |   Go lower!                   |    Go higher!   |      none              |
+| 140.                        |   Go lower!                   |.   Go lower!    |      none              |
+|new game -> submit guess     |tells me to go high or low     | no response!!!  |      none              |
 
 ---
 
@@ -64,3 +64,5 @@ Document at least 3 bugs you found. Add rows as needed.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
   As expected, AI code goes for optimal and intentionally design choices at the expense of readability or reusability unless we spend a long time going back and forth with it to cater it to a different outcome.
+
+
