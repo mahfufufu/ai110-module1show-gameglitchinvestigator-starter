@@ -16,7 +16,7 @@ Document at least 3 bugs you found. Add rows as needed.
 |---------------------------  |-------------------------------|-----------------|------------------------|
 | 100.                        |   Go lower!                   |    Go higher!   |                        |
 | 140.                        |   Go lower!                   |.   Go lower!    |                        |
-|new game -> submit guess     |tells me to go high or low     | no response!!!                      |
+|new game -> submit guess     |tells me to go high or low     | no response!!!                           |
 
 ---
 
@@ -26,7 +26,10 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-  I used GPT-5 mini in order to generate bug fixes and run tests for said bug fixes. Then there was a loop of trying out the game and finding and catching any new bugs I didnt see before and correcting it as it came.
+  I used GPT-5 mini in order to generate bug fixes and run tests for said bug fixes. Then there was a loop of trying out the game and finding and catching any new bugs I didnt see beforehand and correcting it as it came, perfecting the code.
+
+  One correct suggestion was to remove the alternating str() conversion — keep secret as an int always.
+  One incorrect suggestion was how the import statements should be changed (I didn't find that necessary).
 ---
 
 ## 3. Debugging and testing your fixes
@@ -36,12 +39,14 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+  AI helped designed the pytests that tested things like numeric vs string conparisons to check if the alternating string bug was really fixed or not. The main manual test was actually trying out the game itself a couple times and testing the edgecases (like going above and below the range) and unexpected submitted answers to see if things are working properly.
+
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
- I suppose you could describe it as launching a fully designed UI interface with the game logic in a browser tab via the terminal.
+ I suppose you could describe it as launching a fully designed UI interface with the game logic in a browser tab via the terminal. I did learn that Streamlit is a pain to install dur to a very weird error of python enviornments that I don't understand very well.
 
 ---
 
